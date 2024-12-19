@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.TipsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Skin Health Facts"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_button" />
+
+
+        <ImageView
+            android:id="@+id/skin_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/fact"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+
+        <TextView
+            android:id="@+id/tips_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fact"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skin_image" />
+
+
+        <LinearLayout
+            android:id="@+id/tips_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tips_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/fact1_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Protect Your Skin"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact1_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Always use sunscreen to shield your skin from harmful UV rays."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact2_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2. Stay Hydrated"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact2_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinking enough water helps maintain skin elasticity and health."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact3_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="3. Avoid Over-Exfoliating"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact3_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exfoliating too often can damage your skin's protective barrier."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact4_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="4. Moisturize Regularly"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact4_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Using a good moisturizer can prevent dryness and keep your skin healthy."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact5_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="5. Check for Changes"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact5_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monitor your skin for any unusual changes and consult a dermatologist if needed."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact6_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="6. Eat Healthy"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact6_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A diet rich in fruits, vegetables, and healthy fats supports skin health."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact7_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="7. Avoid Smoking"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact7_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smoking accelerates skin aging and causes wrinkles."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact8_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="8. Manage Stress"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact8_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stress can trigger skin issues like acne and eczema. Practice relaxation techniques."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact9_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="9. Get Enough Sleep"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact9_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adequate sleep helps your skin repair and rejuvenate."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fact10_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="10. Consult Professionals"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fact10_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For persistent issues, visit a dermatologist for expert advice."
+                android:textSize="16sp" />
+            <!-- Add more facts following the same pattern -->
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

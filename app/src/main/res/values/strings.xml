@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">SkinClassify</string>
+    <string name="gallery">gallery\n</string>
+    <string name="analyze">analyze\n</string>
+    <string name="image_classifier_failed">Failed to analyze</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_button">Save Result\n</string>
+    <string name="analysis_score">Score: %s</string>
+    <string name="hasil_analisis">Results</string>
+    <string name="analysis_type">Condition: %s</string>
+    <string name="moreInfo">Click the above text for more information</string>
+    <string name="btn_save">Save Result</string>
+    <string name="Btn_delete">delete</string>
+
+    <string name="desain">Designed By Laurens Fernando Pasaribu</string>
+    <string name="title_home">Home</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_history">History</string>
+    <string name="title_profile">Profile</string>
+
+    <string-array name="data_name">
+        <item>Enfeksiyonel</item>
+        <item>Ekzama</item>
+        <item>Akne</item>
+        <item>Pigment</item>
+        <item>Benign</item>
+        <item>Malign</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Description: Enfeksiyonel refers to infections caused by harmful microorganisms such as bacteria, viruses, or fungi. These infections can affect various parts of the body and often cause symptoms like fever, pain, and swelling. \n
+        Benefits: Prompt treatment with antibiotics or antivirals can help in recovery.</item>
+        <item>Description: Ekzama is a skin condition that causes inflammation, redness, and itching. It often occurs due to an allergic reaction or irritation from external factors. \n
+        Benefits: Moisturizing the skin and avoiding triggers can help manage eczema symptoms.</item>
+        <item>Description: Akne is a common skin disorder characterized by pimples, blackheads, and cysts, typically on the face, chest, or back. It is caused by clogged pores, excess oil production, and bacteria. \n
+        Benefits: Treatments include topical creams, medications, and proper skincare.</item>
+        <item>Description: Pigment refers to the natural coloring of the skin, eyes, and hair, caused by the presence of melanin. Disorders like hyperpigmentation or hypopigmentation can occur, leading to uneven skin tone. \n
+        Benefits: Sun protection and treatments like creams can help in managing these conditions.</item>
+        <item>Description: Benign refers to non-cancerous growths or tumors in the body. These growths do not spread to other parts of the body and are generally not life-threatening. \n
+        Benefits: May require removal if they cause discomfort or health issues.</item>
+        <item>Description: Malign refers to cancerous growths or tumors that can invade surrounding tissues and spread to other parts of the body. Malignant tumors are often aggressive and require treatment like surgery, chemotherapy, or radiation. \n
+        Benefits: Early diagnosis and treatment are essential.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/enfeksiyonel</item>
+        <item>@drawable/ekzama</item>
+        <item>@drawable/akne</item>
+        <item>@drawable/pigment</item>
+        <item>@drawable/benign</item>
+        <item>@drawable/malign</item>
+    </integer-array>
+
+    <string name="heroes_name">Skin Conditions</string>
+    <string name="description">description</string>
+    <string name="HomeTitle">Classification of Skin Conditions</string>
+    <string name="DescHome">How to use the app</string>
+    <string name="SkinType">Skin_Type</string>
+    <string name="profile">Profile</string>
+
+    <string name="bio">
+Our team of five members is currently working on a capstone project to fulfill graduation requirements at the "Academy Stechoq" independent study program. Together, we are developing an application for detecting skin diseases. This collaborative project leverages advanced technologies to deliver accurate and user-friendly solutions, reflecting our shared passion for technology and its meaningful impact on real-world problems.</string>
+    <string name="user_information"><Author></Author> Information</string>
+    <string name="username_">Name</string>
+    <string name="Author">Laurens Fernando Pasaribu</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="Major">Major</string>
+    <string name="Informatics">Informatics</string>
+    <string name="Industrial_Engineering">Industrial Engineering</string>
+    <string name="Student_Identification_Number">Student Identification Number</string>
+    <string name="Faculty">Faculty</string>
+    <string name="HomeLe">Discover</string>
+    <string name="explore">Classification of Skin Conditions</string>
+    <string name="curios">Curious about a condition?</string>
+    <string name="efforels">classify the conditions easily</string>
+    <string name="btnScan">Scan Now</string>
+    <string name="tips">Facts about Skin</string>
+    <string name="attracting">How to Use </string>
+    <string name="highPrediction">Types of Conditions</string>
+    <string name="identify">Identify</string>
+    <string name="snap">Snap and Identify</string>
+    <string name="load">Load Image</string>
+    <string name="take">Take Image</string>
+    <string name="descScan">Classify skin conditions effortlessly by either capturing a photo with your camera or selecting an existing image from your gallery.</string>
+    <string name="descScanSkin">Easily detect skin conditions by either capturing a photo with your camera or selecting an existing image from your gallery.</string>
+
+    <string name="Tentang">About</string>
+</resources>
