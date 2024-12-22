@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
         <ImageView
             android:id="@+id/back_button"
             android:layout_width="wrap_content"
@@ -21,22 +20,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <TextView
             android:id="@+id/title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Bird Watching Tips"
+            android:text="Informasi Penyakit Kulit"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/back_button" />
 
-
         <ImageView
-            android:id="@+id/bird_image"
+            android:id="@+id/disease_image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
@@ -46,191 +43,123 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_text" />
 
-
         <TextView
-            android:id="@+id/tips_header"
+            android:id="@+id/disease_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Tips"
+            android:text="Apa yang Harus Dilakukan?"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bird_image" />
-
+            app:layout_constraintTop_toBottomOf="@id/disease_image" />
 
         <LinearLayout
-            android:id="@+id/tips_content"
+            android:id="@+id/disease_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            app:layout_constraintTop_toBottomOf="@id/tips_header"
+            app:layout_constraintTop_toBottomOf="@id/disease_header"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
-                android:id="@+id/tip1_header"
+                android:id="@+id/disease1_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Gear Up for Birding"
+                android:text="1. Enfeksiyonel"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip1_content"
+                android:id="@+id/disease1_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Always bring binoculars for a closer look."
+                android:text="Jika tubuh terkena infeksi seperti bakteri, virus, atau jamur, segera bersihkan area yang terinfeksi dan gunakan obat yang direkomendasikan oleh dokter."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tip2_header"
+                android:id="@+id/disease2_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="2. Decode Bird Language"
+                android:text="2. Ekzama"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip2_content"
+                android:id="@+id/disease2_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Learn to identify common bird behaviors and sounds."
+                android:text="Untuk eksim, hindari pemicu seperti debu atau bahan kimia. Gunakan pelembap khusus dan konsultasikan dengan dokter kulit."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tip3_header"
+                android:id="@+id/disease3_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="3. Use a Field Guide"
+                android:text="3. Akne"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip3_content"
+                android:id="@+id/disease3_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Carry a field guide to help identify birds."
+                android:text="Cuci wajah secara rutin dengan pembersih ringan, hindari memencet jerawat, dan gunakan obat jerawat yang direkomendasikan."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tip4_header"
+                android:id="@+id/disease4_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="4. Learn Bird Calls"
+                android:text="4. Pigment"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip4_content"
+                android:id="@+id/disease4_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Familiarize yourself with common bird calls."
+                android:text="Jika terjadi perubahan pigmentasi kulit, hindari paparan sinar matahari langsung dan gunakan sunscreen secara rutin."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tip5_header"
+                android:id="@+id/disease5_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="5. Be Patient"
+                android:text="5. Benign"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip5_content"
+                android:id="@+id/disease5_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bird watching requires patience and quiet observation."
+                android:text="Jika menemukan lesi jinak seperti tahi lalat, periksa secara berkala untuk memastikan tidak ada perubahan bentuk atau warna."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tip6_header"
+                android:id="@+id/disease6_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="6. Dress Appropriately"
+                android:text="6. Malign"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tip6_content"
+                android:id="@+id/disease6_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wear suitable clothing for the environment and weather."
+                android:text="Untuk kanker kulit atau lesi ganas, segera konsultasikan dengan dokter kulit untuk diagnosis dan penanganan lebih lanjut."
                 android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tip7_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="7. Use Technology"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tip7_content"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Utilize birding apps and online resources for assistance."
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tip8_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="8. Observe Flight Patterns"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tip8_content"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pay attention to how birds fly and move."
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tip9_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="9. Keep Notes"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tip9_content"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Document your observations and sightings."
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tip10_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="10. Join a Birding Group"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tip10_content"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Connect with local bird watchers for tips and outings."
-                android:textSize="16sp" />
-            <!-- Add more tips following the same pattern -->
-
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

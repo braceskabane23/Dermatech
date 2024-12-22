@@ -120,7 +120,7 @@ class ResultActivity : AppCompatActivity() {
         binding.imageView.load(imageUri)
 
         // Display the bird description if available
-        val description = BananaDescriptions[label] ?: "Deskripsi tidak tersedia untuk burung ini."
+        val description = BananaDescriptions[label] ?: "Deskripsi tidak tersedia untuk penyakit ini."
         binding.additionalInfoTextView.text = description
     }
 

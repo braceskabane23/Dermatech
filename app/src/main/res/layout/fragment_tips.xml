@@ -12,7 +12,7 @@
 
 
         <ImageView
-            android:id="@+id/back_button"
+            android:id="@+id/tombol_kembali"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -23,20 +23,20 @@
 
 
         <TextView
-            android:id="@+id/title_text"
+            android:id="@+id/teks_judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Skin Health Facts"
+            android:text="Fakta Kesehatan Kulit"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/back_button" />
+            app:layout_constraintTop_toBottomOf="@id/tombol_kembali" />
 
 
         <ImageView
-            android:id="@+id/skin_image"
+            android:id="@+id/gambar_kulit"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
@@ -44,192 +44,192 @@
             app:layout_constraintDimensionRatio="H,1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title_text" />
+            app:layout_constraintTop_toBottomOf="@id/teks_judul" />
 
 
         <TextView
-            android:id="@+id/tips_header"
+            android:id="@+id/header_tips"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Fact"
+            android:text="Panduan Kesehatan Kulit"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/skin_image" />
+            app:layout_constraintTop_toBottomOf="@id/gambar_kulit" />
 
 
         <LinearLayout
-            android:id="@+id/tips_content"
+            android:id="@+id/konten_tips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            app:layout_constraintTop_toBottomOf="@id/tips_header"
+            app:layout_constraintTop_toBottomOf="@id/header_tips"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
-                android:id="@+id/fact1_header"
+                android:id="@+id/header_fakta1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Protect Your Skin"
+                android:text="1. Lindungi Kulit Anda"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact1_content"
+                android:id="@+id/konten_fakta1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Always use sunscreen to shield your skin from harmful UV rays."
+                android:text="Selalu gunakan tabir surya untuk melindungi kulit Anda dari sinar UV yang berbahaya."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact2_header"
+                android:id="@+id/header_fakta2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="2. Stay Hydrated"
+                android:text="2. Tetap Terhidrasi"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact2_content"
+                android:id="@+id/konten_fakta2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Drinking enough water helps maintain skin elasticity and health."
+                android:text="Minum cukup air membantu menjaga elastisitas dan kesehatan kulit."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact3_header"
+                android:id="@+id/header_fakta3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="3. Avoid Over-Exfoliating"
+                android:text="3. Hindari Eksfoliasi Berlebihan"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact3_content"
+                android:id="@+id/konten_fakta3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Exfoliating too often can damage your skin's protective barrier."
+                android:text="Eksfoliasi yang terlalu sering dapat merusak lapisan pelindung kulit Anda."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact4_header"
+                android:id="@+id/header_fakta4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="4. Moisturize Regularly"
+                android:text="4. Gunakan Pelembap Secara Rutin"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact4_content"
+                android:id="@+id/konten_fakta4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Using a good moisturizer can prevent dryness and keep your skin healthy."
+                android:text="Menggunakan pelembap yang baik dapat mencegah kulit kering dan menjaga kesehatan kulit Anda."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact5_header"
+                android:id="@+id/header_fakta5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="5. Check for Changes"
+                android:text="5. Periksa Perubahan"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact5_content"
+                android:id="@+id/konten_fakta5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Monitor your skin for any unusual changes and consult a dermatologist if needed."
+                android:text="Pantau kulit Anda untuk perubahan yang tidak biasa dan konsultasikan dengan dokter kulit jika diperlukan."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact6_header"
+                android:id="@+id/header_fakta6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="6. Eat Healthy"
+                android:text="6. Makan dengan Sehat"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact6_content"
+                android:id="@+id/konten_fakta6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A diet rich in fruits, vegetables, and healthy fats supports skin health."
+                android:text="Diet yang kaya akan buah, sayuran, dan lemak sehat mendukung kesehatan kulit."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact7_header"
+                android:id="@+id/header_fakta7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="7. Avoid Smoking"
+                android:text="7. Hindari Merokok"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact7_content"
+                android:id="@+id/konten_fakta7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Smoking accelerates skin aging and causes wrinkles."
+                android:text="Merokok mempercepat penuaan kulit dan menyebabkan kerutan."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact8_header"
+                android:id="@+id/header_fakta8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="8. Manage Stress"
+                android:text="8. Kelola Stres"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact8_content"
+                android:id="@+id/konten_fakta8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stress can trigger skin issues like acne and eczema. Practice relaxation techniques."
+                android:text="Stres dapat memicu masalah kulit seperti jerawat dan eksim. Lakukan teknik relaksasi."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact9_header"
+                android:id="@+id/header_fakta9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="9. Get Enough Sleep"
+                android:text="9. Cukup Tidur"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact9_content"
+                android:id="@+id/konten_fakta9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adequate sleep helps your skin repair and rejuvenate."
+                android:text="Tidur yang cukup membantu kulit Anda memperbaiki dan meremajakan."
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/fact10_header"
+                android:id="@+id/header_fakta10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="10. Consult Professionals"
+                android:text="10. Konsultasikan dengan Profesional"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/fact10_content"
+                android:id="@+id/konten_fakta10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="For persistent issues, visit a dermatologist for expert advice."
+                android:text="Untuk masalah yang berkelanjutan, kunjungi dokter kulit untuk saran ahli."
                 android:textSize="16sp" />
-            <!-- Add more facts following the same pattern -->
+            <!-- Tambahkan lebih banyak fakta dengan pola yang sama -->
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

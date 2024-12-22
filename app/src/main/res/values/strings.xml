@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SkinClassify</string>
+    <string name="app_name">SkinSense</string>
     <string name="gallery">gallery\n</string>
     <string name="analyze">analyze\n</string>
     <string name="image_classifier_failed">Failed to analyze</string>
@@ -29,19 +29,46 @@
     </string-array>
 
     <string-array name="data_description">
-        <item>Description: Enfeksiyonel refers to infections caused by harmful microorganisms such as bacteria, viruses, or fungi. These infections can affect various parts of the body and often cause symptoms like fever, pain, and swelling. \n
-        Benefits: Prompt treatment with antibiotics or antivirals can help in recovery.</item>
-        <item>Description: Ekzama is a skin condition that causes inflammation, redness, and itching. It often occurs due to an allergic reaction or irritation from external factors. \n
-        Benefits: Moisturizing the skin and avoiding triggers can help manage eczema symptoms.</item>
-        <item>Description: Akne is a common skin disorder characterized by pimples, blackheads, and cysts, typically on the face, chest, or back. It is caused by clogged pores, excess oil production, and bacteria. \n
-        Benefits: Treatments include topical creams, medications, and proper skincare.</item>
-        <item>Description: Pigment refers to the natural coloring of the skin, eyes, and hair, caused by the presence of melanin. Disorders like hyperpigmentation or hypopigmentation can occur, leading to uneven skin tone. \n
-        Benefits: Sun protection and treatments like creams can help in managing these conditions.</item>
-        <item>Description: Benign refers to non-cancerous growths or tumors in the body. These growths do not spread to other parts of the body and are generally not life-threatening. \n
-        Benefits: May require removal if they cause discomfort or health issues.</item>
-        <item>Description: Malign refers to cancerous growths or tumors that can invade surrounding tissues and spread to other parts of the body. Malignant tumors are often aggressive and require treatment like surgery, chemotherapy, or radiation. \n
-        Benefits: Early diagnosis and treatment are essential.</item>
+    <item>
+        Deskripsi: Enfeksiyonel mengacu pada infeksi yang disebabkan oleh mikroorganisme berbahaya seperti bakteri, virus, atau jamur. Infeksi ini dapat menyerang sistem pernapasan, kulit, saluran kemih, hingga organ dalam seperti hati dan otak. Gejala umum meliputi demam tinggi, nyeri lokal, pembengkakan, kelelahan, dan dalam kasus parah dapat menyebabkan sepsis atau kegagalan organ. Infeksi ini diklasifikasikan menjadi akut, kronis, atau sistemik tergantung tingkat keparahan dan penyebarannya. \n
+        Penyebab: Paparan mikroorganisme melalui kontak langsung, udara, makanan atau air yang terkontaminasi, luka terbuka, atau imunitas tubuh yang lemah akibat penyakit tertentu.\n
+        Pengobatan: Penggunaan antibiotik (untuk bakteri), antivirus, atau antijamur sesuai jenis patogen. Pencegahan melibatkan vaksinasi, kebersihan pribadi, dan pola hidup sehat.\n
+        Risiko Tambahan: Jika tidak ditangani dengan tepat, infeksi dapat berkembang menjadi resistensi antibiotik atau kondisi kronis seperti abses atau peradangan sistemik.
+    </item>
+        <item>
+        Deskripsi: Ekzema adalah gangguan kulit kronis yang ditandai dengan peradangan, kemerahan, gatal parah, dan terkadang lepuhan berisi cairan. Kondisi ini dapat dipicu oleh faktor internal seperti predisposisi genetik, dan faktor eksternal seperti stres, alergen, atau cuaca ekstrem. Dalam beberapa kasus, ekzema dapat menyebabkan infeksi sekunder akibat garukan berulang pada kulit yang rusak. \n
+        Penyebab: Kombinasi faktor genetik, alergi, gangguan imunologis, dan iritasi dari bahan kimia atau lingkungan seperti debu, sabun keras, atau suhu ekstrem.\n
+        Pengobatan: Krim kortikosteroid, terapi imunomodulator, antihistamin, serta pelembab khusus untuk mengembalikan lapisan pelindung kulit. Terapi UV juga dapat digunakan untuk kasus berat.\n
+        Pencegahan: Hindari pemicu yang diketahui, gunakan pelembab secara rutin, dan pertahankan gaya hidup yang minim stres.
+    </item>
+        <item>
+        Deskripsi: Akne, atau jerawat, adalah gangguan kulit yang terjadi akibat penyumbatan folikel rambut oleh minyak (sebum) dan sel kulit mati, sering disertai infeksi bakteri *Propionibacterium acnes*. Akne dapat muncul dalam berbagai bentuk seperti komedo, pustula, nodul, dan kista, dan seringkali dipicu oleh perubahan hormon, terutama selama masa pubertas atau siklus menstruasi. \n
+        Penyebab: Produksi minyak berlebih, ketidakseimbangan hormon, faktor genetik, stres, diet tinggi gula, dan penggunaan kosmetik yang tidak sesuai.\n
+        Pengobatan: Pembersih wajah non-komedogenik, retinoid topikal, antibiotik oral, terapi hormonal, dan perawatan dermatologis seperti peeling kimia, ekstraksi komedo, atau terapi laser.\n
+        Pencegahan: Jaga kebersihan kulit, hindari memencet jerawat, gunakan produk perawatan berbasis air, dan pola makan seimbang.
+    </item>
+        <item>
+        Deskripsi: Gangguan pigmentasi, seperti hiperpigmentasi dan hipopigmentasi, adalah kondisi yang memengaruhi warna kulit akibat perubahan produksi melanin. Hiperpigmentasi sering muncul sebagai bintik hitam akibat paparan sinar matahari, peradangan, atau melasma selama kehamilan, sementara hipopigmentasi dapat terjadi pada vitiligo atau pasca infeksi kulit tertentu. \n
+        Penyebab: Paparan sinar UV yang berlebihan, faktor genetik, cedera kulit, ketidakseimbangan hormon, atau efek samping obat tertentu.\n
+        Pengobatan: Krim pencerah berbasis hidrokuinon, terapi laser, peeling kimia, atau terapi imunomodulator untuk kondisi autoimun seperti vitiligo.\n
+        Pencegahan: Gunakan tabir surya secara konsisten, hindari paparan matahari berlebih, dan perawatan kulit rutin.
+    </item>
+        <item>
+        Deskripsi: Tumor jinak adalah pertumbuhan abnormal yang bersifat non-kanker dan tidak menyebar ke jaringan lain. Contoh tumor jinak meliputi lipoma (jaringan lemak), fibroid rahim, adenoma, dan kista. Meskipun tidak berbahaya, beberapa tumor dapat menyebabkan tekanan pada organ atau saraf sekitarnya, menyebabkan rasa sakit atau gangguan fungsi organ. \n
+        Penyebab: Mutasi genetik tertentu, peradangan kronis, atau respon tubuh terhadap cedera jaringan.\n
+        Pengobatan: Observasi, pengangkatan melalui operasi jika menyebabkan gejala atau mengganggu fungsi organ. Pengobatan tambahan jarang diperlukan kecuali ada risiko keganasan.\n
+        Risiko: Beberapa tumor jinak memiliki potensi menjadi ganas jika tidak dipantau secara teratur.
+    </item>
+        <item>
+        Deskripsi: Tumor ganas adalah pertumbuhan sel yang bersifat kanker, yang dapat menyerang jaringan di sekitarnya dan menyebar ke organ lain melalui aliran darah atau sistem limfatik. Jenis ini dapat menyerang berbagai organ, seperti paru-paru, hati, otak, atau tulang, dan sering kali ditandai dengan penurunan berat badan yang signifikan, rasa nyeri, kelelahan, atau gejala spesifik sesuai lokasi kanker. \n
+        Penyebab: Mutasi genetik akibat paparan karsinogen seperti asap rokok, radiasi, infeksi virus tertentu, atau predisposisi genetik.\n
+        Pengobatan: Kombinasi operasi, kemoterapi, radioterapi, imunoterapi, dan terapi target. Pendekatan multidisiplin sering diperlukan untuk pengobatan.\n
+        Pencegahan: Skrining dini, gaya hidup sehat, menghindari paparan zat karsinogen, dan vaksinasi (misalnya, HPV untuk mencegah kanker serviks).
+    </item>
     </string-array>
+
+
+
 
     <integer-array name="data_photo">
         <item>@drawable/enfeksiyonel</item>

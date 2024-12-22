@@ -65,6 +65,8 @@
                     android:layout_marginEnd="16dp"
                     android:paddingBottom="10dp"
                     android:textSize="17sp"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="8dp"
                     tools:text="@string/description" />
 
             </ScrollView>

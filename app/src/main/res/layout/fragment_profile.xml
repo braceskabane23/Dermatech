@@ -52,7 +52,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dermatech"
+                        android:text="SkinSense"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:fontFamily="@font/poppinsmedium"
@@ -103,12 +103,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
                         android:layout_marginTop="30dp"
-                        android:textColor="@color/black"
-                        android:text="@string/bio"
                         android:fontFamily="@font/poppinsregular"
+                        android:text="@string/bio"
+                        android:textColor="@color/black"
                         android:textSize="15sp"
-                        android:layout_alignParentStart="true" />
+                        android:justificationMode="inter_word" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -136,9 +138,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="@string/user_information"
+                        android:text="Faris Rajendra Maulana as Project Manager"
                         android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:layout_alignParentStart="true"
                         android:textStyle="bold"/>
                 </RelativeLayout>
@@ -153,19 +155,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="Procject manajer"
+                        android:text="Fransiska Rambu Yowa as Data Specialist"
                         android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:layout_alignParentStart="true"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#6E6C6C"
-                        android:text="Faris Rajendra Maulana "
-                        android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
-                        android:layout_alignParentEnd="true"
                         android:textStyle="bold"/>
                 </RelativeLayout>
 
@@ -179,19 +172,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="Data Specialist"
+                        android:text="Daud Firdo as ML Manager"
                         android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:layout_alignParentStart="true"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#6E6C6C"
-                        android:text="Fransiska Rambu Yowa "
-                        android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
-                        android:layout_alignParentEnd="true"
                         android:textStyle="bold"/>
                 </RelativeLayout>
 
@@ -205,19 +189,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="ML engineer"
+                        android:text="Laurens Fernando as Software Developer"
                         android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:layout_alignParentStart="true"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#6E6C6C"
-                        android:text="Daud Firdo"
-                        android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
-                        android:layout_alignParentEnd="true"
                         android:textStyle="bold"/>
                 </RelativeLayout>
 
@@ -231,53 +206,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="Software Developer"
+                        android:text="Dectrixie Theodore Mayumi as Reporting"
                         android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:layout_alignParentStart="true"
                         android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#6E6C6C"
-                        android:text="Laurens Fernando  "
-                        android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
-                        android:layout_alignParentEnd="true"
-                        android:textStyle="bold"/>
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="Reporting"
-                        android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
-                        android:layout_alignParentStart="true"
-                        android:textStyle="bold"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#6E6C6C"
-                        android:text="Dectrixie Theodore Mayumi  "
-                        android:fontFamily="@font/poppinsmedium"
-                        android:textSize="15sp"
-                        android:layout_alignParentEnd="true"
-                        android:textStyle="bold"/>
-
                 </RelativeLayout>
 
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
 
     </LinearLayout>
 

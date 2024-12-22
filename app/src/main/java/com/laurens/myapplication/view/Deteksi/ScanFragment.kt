@@ -28,6 +28,11 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.File
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.ColorMatrix
+import android.graphics.ColorMatrixColorFilter
+import com.laurens.myapplication.ml.CnnSeq12SkinDisease
 
 class ScanFragment : Fragment(R.layout.fragment_scan) {
     private var _binding: FragmentScanBinding? = null
@@ -37,12 +42,11 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
     private lateinit var imageView: ImageView
     private val GALLERY_REQUEST_CODE = 123
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding =FragmentScanBinding.inflate(inflater, container, false)
+        _binding = FragmentScanBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -66,6 +70,41 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         loadImageButton.setOnClickListener {
             openGallery()
         }
+    }
+
+    private fun segmentImage(originalBitmap: Bitmap): Bitmap {
+        // Konversi ke grayscale
+        val width = originalBitmap.width
+        val height = originalBitmap.height
+        val grayscaleBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(grayscaleBitmap)
+
+        val colorMatrix = ColorMatrix().apply {
+            setSaturation(0f)
+        }
+        val paint = android.graphics.Paint().apply {
+            colorFilter = ColorMatrixColorFilter(colorMatrix)
+        }
+        canvas.drawBitmap(originalBitmap, 0f, 0f, paint)
+
+        // Thresholding
+        val segmentedBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+        val threshold = 127
+
+        for (x in 0 until width) {
+            for (y in 0 until height) {
+                val pixel = grayscaleBitmap.getPixel(x, y)
+                val grayValue = Color.red(pixel)
+                val newPixel = if (grayValue > threshold) {
+                    Color.WHITE
+                } else {
+                    Color.BLACK
+                }
+                segmentedBitmap.setPixel(x, y, newPixel)
+            }
+        }
+
+        return segmentedBitmap
     }
 
     private fun handleCaptureImage() {
@@ -98,7 +137,7 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
 
     private val takePicturePreview = registerForActivityResult(ActivityResultContracts.TakePicturePreview()) { bitmap ->
         bitmap?.let {
-            imageView.setImageBitmap(it)
+            imageView.setImageBitmap(it)  // Menampilkan gambar asli
             generateOutput(it)
         }
     }
@@ -111,7 +150,7 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         if (requestCode == GALLERY_REQUEST_CODE && result?.resultCode == Activity.RESULT_OK) {
             result.data?.data?.let { uri ->
                 val bitmap = BitmapFactory.decodeStream(requireContext().contentResolver.openInputStream(uri))
-                imageView.setImageBitmap(bitmap)
+                imageView.setImageBitmap(bitmap)  // Menampilkan gambar asli
                 generateOutput(bitmap)
             } ?: Log.e("TAG", "Error in selecting image")
         }
@@ -126,16 +165,20 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         "Malign"         // 5
     )
 
-    private val CONFIDENCE_THRESHOLD = 0.5f // Adjust this threshold as needed
+    private val CONFIDENCE_THRESHOLD = 0.5f
 
     private fun generateOutput(bitmap: Bitmap) {
-        val resizedBitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true)
+        // Membuat salinan gambar asli untuk disegmentasi
+        val segmentedBitmap = segmentImage(bitmap)
 
-        val byteBuffer = ByteBuffer.allocateDirect(1 * 224 * 224 * 3 * 4)  // 1 image, 224x224, 3 channels, 4 bytes per float
+        // Proses gambar yang tersegmentasi
+        val resizedSegmentedBitmap = Bitmap.createScaledBitmap(segmentedBitmap, 224, 224, true)
+
+        val byteBuffer = ByteBuffer.allocateDirect(1 * 224 * 224 * 3 * 4)
         byteBuffer.order(ByteOrder.nativeOrder())
 
         val intValues = IntArray(224 * 224)
-        resizedBitmap.getPixels(intValues, 0, 224, 0, 0, 224, 224)
+        resizedSegmentedBitmap.getPixels(intValues, 0, 224, 0, 0, 224, 224)
         var pixel = 0
         for (i in 0 until 224) {
             for (j in 0 until 224) {
@@ -149,7 +192,7 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 224, 224, 3), DataType.FLOAT32)
         inputFeature0.loadBuffer(byteBuffer)
 
-        val model = SkinDiseaseMobilenetv2.newInstance(requireContext())
+        val model = CnnSeq12SkinDisease.newInstance(requireContext())
         val outputs = model.process(inputFeature0)
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer
 
@@ -162,7 +205,8 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
 
         model.close()
 
-        val imageUri = saveImageToCache(bitmap)
+        // Simpan dan kirim gambar asli ke ResultActivity
+        val imageUri = saveImageToCache(bitmap)  // Menyimpan gambar asli
         val intent = Intent(requireContext(), ResultActivity::class.java).apply {
             putExtra("label", label)
             putExtra("imageUri", imageUri.toString())
@@ -193,9 +237,8 @@ class ScanFragment : Fragment(R.layout.fragment_scan) {
         return file.toUri()
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
-    }
+        _binding=null
+        }
 }

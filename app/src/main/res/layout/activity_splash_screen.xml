@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.Splash.SplashScreenActivity"
-    android:background="@drawable/splash">
+    android:background="@drawable/logo5">
 
     <ProgressBar
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -28,8 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/loading"
-        android:text="Designed by Dermatech's Team"
-        android:textColor="@color/black"
+        android:text="Designed by SkinSense Team"
+            android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="15dp"
         android:fontFamily="@font/bolditalic"
